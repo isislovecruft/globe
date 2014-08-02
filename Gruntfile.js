@@ -212,11 +212,11 @@ module.exports = function(grunt) {
             css:{
                 files: [ '<%= globe.src %>css/*.css' ],
                 tasks: requiredWatchTasks.concat(['cssmin'])
-            }
+            },
             //enable if you have no file watchers in your ide
-             ,scss:{
-             files: [ srcPath + 'css/*.scss'],
-             tasks: requiredWatchTasks.concat(['sass'])
+            scss:{
+               files: [ srcPath + 'css/*.scss'],
+               tasks: requiredWatchTasks.concat(['sass'])
              }
         },
 
