@@ -214,12 +214,10 @@ module.exports = function(grunt) {
                 tasks: requiredWatchTasks.concat(['cssmin'])
             }
             //enable if you have no file watchers in your ide
-            /*
              ,scss:{
              files: [ srcPath + 'css/*.scss'],
              tasks: requiredWatchTasks.concat(['sass'])
              }
-             */
         },
 
         emberTemplates: {
