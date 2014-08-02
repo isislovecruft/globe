@@ -266,7 +266,7 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 files: {
-                    '<%= globe.tmp%>css/style.css': ['<%= globe.tmp %>css/new-style.scss']
+                    '<%= globe.tmp %>css/style.css': ['<%= globe.tmp %>css/new-style.scss']
                 }
             }
         },
