@@ -215,7 +215,7 @@ module.exports = function(grunt) {
             },
             //enable if you have no file watchers in your ide
             scss:{
-               files: [ srcPath + 'css/*.scss'],
+               files: [ srcPath + 'css/**/*.scss'],
                tasks: requiredWatchTasks.concat(['sass'])
              }
         },
