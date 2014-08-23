@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     var cleanBuild = ['clean:build'];
     var defaultTasks = ['env:dev', 'clean:tmp', 'copy:tmp', 'validate-package', 'eslint', 'preprocess', 'regex-replace', 'emberTemplates', 'concat:dev', 'sass', 'cssmin', 'copy:assets'];
     var standaloneTasks = ['env:prod', 'clean:tmp', 'eslint', 'copy:tmp', 'clean:standalone', 'preprocess', 'regex-replace', 'emberTemplates', 'concat:prod', 'uglify', 'sass', 'cssmin', 'copy:standalone'];
-    var requiredWatchTasks = ['env:dev', 'clean:tmp', 'copy:tmp', 'preprocess', 'regex-replace', 'emberTemplates'];
+    var requiredWatchTasks = ['env:dev', 'clean:tmp', 'copy:tmp', 'preprocess', 'regex-replace', 'emberTemplates', 'concat:dev', 'sass', 'cssmin', 'copy:assets'];
     var testingTasks;
 
     // helper methods
@@ -278,6 +278,7 @@ module.exports = function(grunt) {
                         '<%= globe.tmp %>css/pure-min.css',
                         '<%= globe.tmp %>css/jquery.qtip.min.css',
                         '<%= globe.tmp %>css/new-style.css',
+                        '<%= globe.tmp %>css/style.css',
                         '<%= globe.tmp %>css/country-flags.css'
                     ]
                 }
