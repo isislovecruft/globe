@@ -6,8 +6,11 @@
                     <div class="logo-wrapper">
                         {{#link-to 'index' class="logo" title="back home"}}{{/link-to}}
                     </div>
+                    <div class="menu-link" {{action toggleProperty "menuExpanded"}}>
+                        <i class="fa fa-reorder fa-lg fa-inverse"></i>
+                    </div>
                 </div>
-                <div class="pure-u-4-5">
+                <div {{bind-attr class=":pure-u-4-5 menuExpanded :menu-list"}}>
                     <div class="navigation-wrapper">
                         {{ partial "navigation"}}
                     </div>

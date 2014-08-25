@@ -4,6 +4,7 @@ GLOBE.ApplicationController = Em.Controller.extend({
     value: Em.computed.oneWay('query'),
     query: '',
     title: 'Globe',
+    menuExpanded: false,
 
     /**
      * property that returns true if the user is encouraged to press the search button
