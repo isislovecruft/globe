@@ -212,14 +212,12 @@ module.exports = function(grunt) {
             css:{
                 files: [ '<%= globe.src %>css/*.css' ],
                 tasks: requiredWatchTasks.concat(['cssmin'])
-            }
+            },
             //enable if you have no file watchers in your ide
-            /*
-             ,scss:{
-             files: [ srcPath + 'css/*.scss'],
-             tasks: requiredWatchTasks.concat(['sass'])
+            scss:{
+               files: [ srcPath + 'css/**/*.scss'],
+               tasks: requiredWatchTasks.concat(['sass'])
              }
-             */
         },
 
         emberTemplates: {
@@ -268,7 +266,7 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 files: {
-                    '<%= globe.tmp%>css/style.css': '<%= globe.tmp %>css/new-style.scss'
+                    '<%= globe.tmp %>css/style.css': ['<%= globe.tmp %>css/new-style.scss']
                 }
             }
         },
