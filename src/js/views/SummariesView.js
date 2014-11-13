@@ -15,6 +15,7 @@ GLOBE.BaseSummariesView = Em.View.extend({
         var table = $el.dataTable({
             'aaData': [],
             'aaSorting': [],
+            'bFilter': false,
 
             'sDom': '<"datatables-meta"f>t',
             'sScrollY': '600px',
